@@ -30,6 +30,7 @@ class CameraSystem(val xbox: WrappedXBox) : System {
         backCamera.setWhiteBalanceManual(50)
     }
 
+    // TODO: move this to the controller
     private fun rightTrigger(): Boolean {
         return xbox.getRightTrigger() > 0.75
     }
